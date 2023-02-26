@@ -13,115 +13,179 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-logo">
-            <img src="src/udgam.png">
+    <!-- Just a simple layout -->
+
+    <nav>
+        <div>
+            <div class="logo">
+                UDGAM'23
+            </div>
         </div>
-        <ul class="navbar-menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/details.html">Sports</a></li>
-            <li><a href="/contacts.html">Contact</a></li>
-        </ul>
-        <div class="navbar-toggle">
+        <div>
+            <ul id="nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/details.html">Sports</a></li>
+            </ul>
+        </div>
+        <div class="menu" id="menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
-    </div>
+    </nav>
     <style>
-        body {
-            background-color: black;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #000000;
-            color: #fff;
-            height: 100px;
-            padding: 0 20px;
-        }
-
-        .navbar-logo img {
-            width: 100px;
-            height: 100px;
-            color: #fff;
-            font-size: 24px;
-            text-decoration: none;
-        }
-
-        .navbar-menu {
-            display: flex;
-            list-style: none;
+        /* Important stuff here! Look at the bottom!!! (Line 133 to 136) */
+        *,
+        *::after,
+        *::before {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            /* font-family: "Poppins", sans-serif; */
         }
 
-        .navbar-menu li {
-            margin: 0 10px;
+        :root {
+            --nav-bg: #000000;
+            --main-clr: gold;
+            --nav-shadow: 0px 3px var(--main-clr);
         }
 
-        .navbar-menu li a {
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+            width: 100%;
+            height: 4rem;
+            z-index: 999;
+            background: #000000;
+            /* box-shadow: var(--nav-shadow); */
+        }
+
+        nav .logo {
+            color: #fff;
+            text-decoration-color: var(--main-clr);
+            font-size: 1.5rem;
+            width: 10rem;
+            font-weight: 100;
+            /* 0px 3px var(--main-clr) */
+        }
+
+        nav ul {
+            --padding: 20px;
+            --font-size: 17px;
+
+            list-style: none;
+            display: flex;
+            align-items: center;
+            font-size: var(--font-size);
+            overflow-y: hidden;
+            transition: 1s cubic-bezier(.68, -0.55, .27, 10.55);
+            /* box-shadow: var(--nav-shadow); */
+        }
+
+        nav ul li {
+            padding: var(--padding);
+        }
+
+        nav ul li a {
             color: #fff;
             text-decoration: none;
+            position: relative;
         }
 
-        .navbar-menu li a:hover {
-            color: gold;
-            text-decoration: none;
+        nav ul li a::after {
+            content: "";
+            width: 0%;
+            height: 1.7px;
+            border-radius: 99px;
+            background: var(--main-clr);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease;
         }
 
-        .navbar-toggle {
-            display: none;
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav .menu {
+            width: 22px;
+            height: 16px;
             cursor: pointer;
+            display: none;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            margin: 20px;
         }
 
-        .navbar-toggle span {
-            display: block;
-            width: 25px;
-            height: 3px;
-            margin-bottom: 5px;
-            background-color: #fff;
+        nav .menu span {
+            width: 100%;
+            height: 2px;
+            border-radius: 99px;
+            background: #fff;
+            transition: 0.3s ease;
+            transform-origin: left;
         }
 
-        @media screen and (max-width: 768px) {
-            .navbar-menu {
-                display: none;
-            }
+        nav .menu.active span {
+            background: var(--main-clr);
+        }
 
-            .navbar-toggle {
-                display: block;
-            }
+        nav .menu.active span:nth-child(1) {
+            transform: rotate(40deg);
+        }
 
-            /* .navbar-toggle.active span:nth-child(2) {
-                transform: rotate(45deg);
-                top: 11px;
-            }
+        nav .menu span:nth-child(3) {
+            transform-origin: left;
+        }
 
-            .navbar-toggle.active span:nth-child(3) {
-                transform: rotate(-45deg);
-                top: 11px;
-            }
+        nav .menu.active span:nth-child(3) {
+            transform: rotate(-40deg);
+        }
 
-            .navbar-toggle.active span:nth-child(1) {
-                opacity: 0;
-            } */
+        nav .menu.active span:nth-child(2) {
+            transform: scale(0);
+        }
 
-            .navbar-menu.active {
+        @media (max-width: 910px) {
+            nav .menu {
                 display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100px;
-                padding-left: 0px;
-                width: 100%;
-                background-color: #000000;
-                z-index: 999;
+
             }
 
-            .navbar-menu.active li {
-                margin: 10px;
+            nav ul {
+                --height: 0px;
+
+                flex-direction: column;
+                background: var(--nav-bg);
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 56px;
+                height: var(--height);
+                transition: 1s cubic-bezier(.68, -0.55, .27, 1.55);
+            }
+
+            nav ul.active {
+                --height: calc((((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber));
+                /*   (Block Level Padding + The Font Size) * The Number of Children   */
+
+
+                transition: 1s ease;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li a {
+                width: 100%;
+                text-transform: capitalize;
             }
         }
     </style>
@@ -710,6 +774,25 @@
         </details>
         </section>
     </div>
+    <script>
+        // For toggling and finding number of children and other stuff is done here!
+
+        const navigation = document.getElementById("nav");
+        const menu = document.getElementById("menu");
+
+        menu.addEventListener("click", () => {
+            // The navigation.children.length means the following :-
+            // The children inside a parent are basically an array of elements; So, here I'm finding the length of the array aka how many children are inside the nav bar.
+            //   Yup That's all.
+            navigation.style.setProperty("--childenNumber", navigation.children.length);
+
+            //    Casually Toggling Classes to make them animate on click
+            //   Regular stuff ;)
+            navigation.classList.toggle("active");
+            menu.classList.toggle("active");
+        });
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
