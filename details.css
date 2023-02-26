@@ -41,20 +41,23 @@
 
  .top-left {
    position: absolute;
-   top: 20rem;
+   top: 10rem;
    left: 5rem;
    height: auto;
-   color: white;
+   color: rgb(255, 218, 9);
    font-size: 15rem;
    /* left: 16px; */
  }
 
- .img1 {
-  margin-top: 4rem;
-   height: 100%;
+ .imggrad {
+   background-image:
+     linear-gradient(to right, black, rgba(255, 255, 255, 0)), url('src/clg.png');
+   background-size: contain;
    width: 100%;
-
-   object-fit: fill;
+   height: 40rem;
+   text-align: center;
+   color: #fff;
+   /* background-color: antiquewhite; */
  }
 
  ul {
@@ -180,7 +183,9 @@
      margin-top: 1rem;
      padding: 0.5rem;
    }
-
+.imggrad{
+  height:20rem;
+}
    .main {
      margin: 1rem 1rem;
    }
