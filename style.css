@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: "Product Sans Regular";
+    src: url(./fonts/Product\ Sans\ Regular.ttf );
+}
+
+@font-face {
+    font-family: "Product Sans Bold";
+    src: url(./fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Product Sans Italic";
+    src: url(./fonts/Product\ Sans\ Italic.ttf);
+}
+
+@font-face {
+    font-family: "Product Sans Bold Italic";
+    src: url(./fonts/Product\ Sans\ Bold\ Italic.ttf);
+}
+
+@font-face {
+    font-family: "funky";
+    src: url(./fonts/funky.otf);
+}
+
+* {
+    font-family: Product Sans Regular;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(255, 0, 0);
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.288);
+    height: 100%;
+    /* width:500px; */
+
+}
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* background-color: rgba(66, 55, 55, 0.288); */
+}
+.container {
+    color: #333;
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1 {
+    font-weight: normal;
+    margin-top :10rem;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.container li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.container li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+.carousel-inner{
+    /* position:relative; */
+}
+.dp-container{
+     position:absolute;
+     width: 200px;
+     height: 200px;
+     border: 2px solid black;
+     padding: 1px;
+     z-index: 1000;
+     background-color: rgb(220,220,220);
+     left:400px;
+     bottom:20px;
+   }

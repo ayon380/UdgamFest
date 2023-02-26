@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            color: #fff;
+            height: 60px;
+            padding: 0 20px;
+        }
+
+        .navbar-logo a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-menu li {
+            margin: 0 10px;
+        }
+
+        .navbar-menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin-bottom: 5px;
+            background-color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+            }
+
+            .navbar-toggle {
+                display: block;
+            }
+
+            .navbar-toggle.active span:nth-child(2) {
+                transform: rotate(45deg);
+                top: 11px;
+            }
+
+            .navbar-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg);
+                top: 11px;
+            }
+
+            .navbar-toggle.active span:nth-child(1) {
+                opacity: 0;
+            }
+
+            .navbar-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                padding-left: 0px;
+                width: 100%;
+                background-color: #000000;
+                z-index: 999;
+            }
+
+            .navbar-menu.active li {
+                margin: 10px;
+            }
+        }
+    </style>
+    <script>
+        const navbarToggle = document.querySelector(".navbar-toggle");
+        const navbarMenu = document.querySelector(".navbar-menu");
+
+        navbarToggle.addEventListener("click", () => {
+            navbarToggle.classList.toggle("active");
+            navbarMenu.classList.toggle("active");
+        });
+
+
+    </script>
+</body>
+
+</html>

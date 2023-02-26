@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="details.css">
+    <title>Details</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="src/udgam.png">
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/details.html">Sports</a></li>
+            <li><a href="/contacts.html">Contact</a></li>
+        </ul>
+        <div class="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            color: #fff;
+            height: 100px;
+            padding: 0 20px;
+        }
+
+        .navbar-logo img {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-menu li {
+            margin: 0 10px;
+        }
+
+        .navbar-menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar-menu li a:hover {
+            color: gold;
+            text-decoration: none;
+        }
+
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin-bottom: 5px;
+            background-color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+            }
+
+            .navbar-toggle {
+                display: block;
+            }
+
+            .navbar-toggle.active span:nth-child(2) {
+                transform: rotate(45deg);
+                top: 11px;
+            }
+
+            .navbar-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg);
+                top: 11px;
+            }
+
+            .navbar-toggle.active span:nth-child(1) {
+                opacity: 0;
+            }
+
+            .navbar-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100px;
+                padding-left: 0px;
+                width: 100%;
+                background-color: #000000;
+                z-index: 999;
+            }
+
+            .navbar-menu.active li {
+                margin: 10px;
+            }
+        }
+    </style>
+    <img class="img1" src="src/ten.png" alt="Snow">
+    <div class="top-left">Sports</div>
+    </div>
+
+    <div class="main">
+        <details>
+            <summary>Cricket</summary>
+            <div class="card cricket">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/img1.png">
+                </div>
+                <p class="m1">Rules and Regulations:</p>
+                <p class="prules">
+                <ul>
+                    <li>
+                        Maximum of 15 players are allowed per team.</li>
+                    <li>
+                        All matches will be played with the red ball. Hence , whites are
+                        compulsory</li>
+                    <li>
+                        Tournament will be played in T-10 format, power play in T-10
+                        format will be first three overs only two players should be
+                        outside of 30 yards.</li>
+                    <li>
+                        Tie in the game will be resolved by a super over.</li>
+                    <li>
+                        Teams should report 15 minutes before the scheduled time if
+                        the team is late by more than 10 minutes, the match would be
+                        forfeited to the opposition team.</li>
+                    <li>
+                        60 minute time limits – Bowling teams are forced to complete
+                        their 10 overs within 50 minutes.</li>
+                    <li>
+                        Each innings is expected to last in the region of 60 minutes,
+                        and fielding penalties are often given against the bowling side
+                        if they have failed to complete the overs in the required time.
+                        This means they can lose one fielder from the outside of the
+                        30-yard circle (used for powerplay) for the remainder of the
+                        innings.</li>
+                    <li>
+                        Decision of Umpires and organizing committee shall be final
+                        and binding.</li>
+                    <li>
+                        ICC rules will be applied in every situation.</li>
+                    <li>
+                        In case of a catch, new batsmen have to face the next ball .</li>
+                    <li>
+                        Organizers and umpires decision will be final and organizers’
+                        decision will be held final in cases of clash between the two.</li>
+                </ul>
+                </p>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Chandra Sai Reddy<br>Nayum<br>Siddharth
+                </p>
+            </div>
+        </details>
+        <details>
+
+            <summary>Football</summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/foot.png">
+                </div>
+                <p class="m1">Rules and Regulations:</p>
+                <p class="prules">
+                <ul>
+                    <li>
+                        Each team can register a maximum of 18 players for the entire
+                        duration of the tournament. Once registration of the players is
+                        done, no new players can be inducted into the squad during
+                        the tournament. ID cards are necessary.</li>
+                    <li>
+                        Each University can register at most 2 teams.</li>
+                    <li>
+                        The matches will be of 11 vs 11 format .</li>
+                    <li>
+                        Each team has a maximum of 5 substitutions per match and
+                        once a player is brought off he cannot be substituted back into
+                        the game.</li>
+                    <li>
+                        Each match will last for 40 minutes, played in two halves of 20
+                        minutes each. The final match(es) will be of 60 minutes, played
+                        in two halves of 30 minutes.</li>
+                    <li>
+                        The basic rules of the game shall remain the same and the
+                        offside rule is applicable.</li>
+                    <li>
+                        If a player receives a red card or two yellow cards in the same
+                        match, he shall be dismissed from the game and will not be
+                        allowed to play in the subsequent match.</li>
+                    <li>
+                        The match officials will be the highest authority and their
+                        decision will be undisputed and final.</li>
+                    <li>
+                        Each team should arrive for their matches at least half an hour
+                        prior to kick-off.</li>
+                    <li>
+                        If any team fails to show up for their match on time, the
+                        opposition will be awarded a walkover (3-0 win) and be
+                        declared the winner of the said match.</li>
+                    <li>
+                        In case of a draw in the knockout stages, there will be no extra
+                        time and the game will go straight to penalty shootout.
+                        FIFA Rulebook will be followed unless mentioned otherwise in
+                        the rulebook.</li>
+                    <li>
+                        In case of any discrepancy, match official’s and organizer’s
+                        decisions will be final. These are the tentative rules that will be
+                        followed. The organizers can change the rules according to the
+                        conditions.
+                    </li>
+                </ul>
+                </p>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Kaushik Aadithya CH<br>Pratheek
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Basketball
+            </summary>
+            <div class="card basketball">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/img2.png">
+                </div>
+                <p class="m1">Rules and Regulations:</p>
+                <p class="prules">
+                <ul>
+                    <li>
+                        FIBA rules applicable.</li>
+                    <li>
+                        10 minutes each quarter with a 2 minute break between the
+                        quarters.</li>
+                    <li>
+                        Teams should report to the basketball court half an hour
+                        before their match. (Every team will be intimated of their match
+                        an hour prior. </li>
+                    <li>
+                        All team players should have their kit(same jersey patternwith numbers) and shoes in order to
+                        play. Jewelry of any kind
+                        isn’t allowed.</li>
+                    <li>
+                        Maximum 8 players are allowed in a team(5+3).</li>
+                    <li>
+                        Every player should carry their College provided ID cards for
+                        the cross checks to their match venue before their matches.</li>
+                    <li>
+                        Use of abusive or foul language during the play is prohibited
+                        as one may get technical fouls or expulsion depending on the
+                        referee and the organizing committee.</li>
+                    <li>
+                        Change of players midst the tournament is not allowed.</li>
+                    <li>
+                        Decision of Referees and organizing committee shall be final
+                        and binding.
+                    </li>
+                </ul>
+                </p>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Dheeraj V 9494985201<br>Anurag Tsunduru : 9063702568
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Athletics
+            </summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/ath.png">
+                </div>
+                <p class="prules">
+
+                <p class="m1">Men</p>
+                <ul>
+                    Track and field events : 100m, 200m, 400m, 800m</li>
+                    <li>
+                        Long Jump
+                    </li>
+                </ul>
+
+                <p class="m1">Women</p>
+                <ul>
+                    <li>
+                        Track and field events : 100m, 200m, 400m</li>
+                    <li>
+                        Long Jump
+                    </li>
+                </ul>
+                <p class="m1">Rules and Regulations:</p>
+                <ul>
+                    <li>Heats will be conducted for 100m, 200m and 400m
+                        (depending on participation), based on which there will be
+                        further heats before the finals.</li>
+                    <li>
+                        -The other races won’t have any heats unless in extreme
+                        circumstances. Participants will be timed and results will be
+                        decided accordingly</li>
+                    <li>
+                        -Sprinters should run in designated lanes and cannot cross
+                        lanes, throughout the race.</li>
+                    <li>
+                        -In races with bunched starts, athletes can break inside. In the
+                        800-meter race, they start from staggered positions and can
+                        break inside after the first bend.</li>
+                    <li>
+                        -Before giving the ‘set’ command or before firing the starter
+                        gun, athletes cannot touch the other side of the start line with
+                        their hands or feet.</li>
+                    <li>
+                        -Athletes should not obstruct other athletes during the race.</li>
+                    <li>
+                        -If an athlete is obstructed, the referee may order the race to
+                        be held again, or he may ask the athlete to take part in the next
+                        round.</li>
+                    <li>
+                        -Athletes may leave the track voluntarily before the race ends,
+                        but they cannot come back to the track else they will be
+                        disqualified.</li>
+                    <li>
+                        -Maximum 3 participants from each college in any particular
+                        event. -Each individual can participate in a maximum of 3
+                        events.</li>
+                    <li>
+                        -An event may stand cancelled in case of insufficient
+                        participation and is in the discretion of the
+                        referee/captain.</li>
+                    <li>
+                        -Decision of the referee is final in any case of discrepancy.</li>
+                    <p class="m1">Long Jump:</p>
+                </ul>
+                <ul>
+                    <li>
+                        The athlete begins running from his or her starting position
+                        and jumps, landing in a sand pit. There is a foul line, in the runup area, that the athlete
+                        has
+                        to be aware of;
+                        Jumping from beyond this line results in a 'foul jump'. Jumpers
+                        try to get as close to the foul line as legally possible before
+                        initiating their jump.</li>
+                    <li>
+                        -No part of the athlete's foot should cross the front edge of the
+                        foul line. If, at the point of take-off, any part of his foot crosses
+                        the front edge of the foul line, then the jump is termed to be
+                        illegal or a 'foul jump', and does not count.</li>
+                    <li>
+                        -The long jumper has three attempts to register his or her best
+                        legal jump. A foul jump accounts for an attempt. Only the
+                        farthest legal jump counts.</li>
+                    <li>
+                        -The distance or the 'jump' is measured from the front edge of
+                        the foul line to the first landing point of the athlete, from the
+                        first point of contact.
+                    </li>
+                </ul>
+                </p>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Sarvesh Tindola 6377340400<br>Divyanshu Singh 9005352087
+                </p>
+            </div>
+
+        </details>
+        <details>
+            <summary>Tennis
+            </summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/tennis.png">
+                </div>
+                <p class="prules">
+
+                <p class="m1">Rules and Regulations</p>
+                <ul>
+                    <li>
+                        Tournament consists of both singles and doubles (Mens).</li>
+                    <li>
+                        Doubles partners should be from the same university.
+                    </li>
+                    <li>
+                        Umpire decision is final , opposing the umpire decision
+                        causes you to lose the points( will be awarded to the
+                        opponent).</li>
+                    <li>
+
+                        Players should report on time ,if not the opponent will be
+                        announced as winner(only 5 to 10 minutes can be spared).
+                    </li>
+                    <li>
+                        Players are not allowed to play if they are not in the proper
+                        tennis wears (shoes,shorts, etc)
+                    </li>
+                    <li>
+                        The draw for the tournament shall be made by lots.
+                    </li>
+                </ul>
+                </p>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Dheeraj V 9494985201<br>Anurag Tsunduru : 9063702568
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Volleyball</summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/vollry.png">
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary>Table Tennis</summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/tt.png">
+                </div>
+                <p class="prules">
+                <p class="m1">Rules and Regulations</p>
+                <ul>
+                    <li>
+                        Tournament consists of both singles and doubles (Mens).
+                        The rules as adopted by the Table Tennis Federation of India
+                        shall be followed. </li>
+                    <li>
+                        The Tournament shall be conducted in singles and doubles
+                        for men Matches until Quarterfinals shall be played in best of
+                        three sets. Quarter Finals, Semifinals and Finals shall be played
+                        in the best of five sets.</li>
+                    <li>
+                        Fixtures shall follow a knockout format.</li>
+                    <li>
+                        For any in-game arguments, the referee’s call would be final.
+                    </li>
+                </ul>
+                </p>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Dheeraj V 9494985201<br>Anurag Tsunduru : 9063702568
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Powerlifting</summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/pl.png">
+                </div>
+                <p class="prules">
+
+                <p class="m1">Weight Categories</p>
+                <ul>
+                    <li>
+                        Below 65</li>
+                    <li>
+                        65 kgs to 74 kgs</li>
+                    <li>
+                        74 kgs to 80 kgs</li>
+                    <li>
+                        Above 80 Open Category
+                    </li>
+                </ul>
+                <p class="m1">Rules and Regulations</p>
+                <ul>
+                    <li>
+                        Allowed equipment: Bands, Belts, Wraps (Knee and Wrist
+                        only), Chalk and Squat shoes.</li>
+                    <li>
+                        Any piece of equipment can be declared not allowed at the
+                        discretion of the captain and the referee. (Prior permission is
+                        advised if it is not mentioned in the above list.</li>
+                    <li>
+                        Commands: Lifters must wait for the judge's commands
+                        before starting and completing each lift. For example, in the
+                        squat, the lifter must wait for the judge's command to squat
+                        and then wait for the command to stand up before racking the
+                        bar.</li>
+                    <li>
+                        Scoring: The lifter's highest successful lift in each category is
+                        added together to determine their total score.</li>
+                    <li>
+                        Lifting order: Lifters are assigned a lifting order based on their
+                        weight class and opening attempts. The lifter with the lowest
+                        opening attempt weight goes first, and the lifter with the
+                        highest opening attempt weight goes last.</li>
+                    <li>
+                        Drug testing: Drug testing will be there to ensure fairness and
+                        eliminate the use of performance-enhancing drugs.
+                    </li>
+                </ul>
+                </p>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Krish Srivastava 8076001830<br>Nayan Gupta 9031344801
+                </p>
+            </div>
+        </details>
+        <details>
+            <summary>Rope Skipping</summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/rs.png">
+                </div>
+                <p class="m1">Single Bounce:</p>
+                <ul>
+                    <li>
+                        Time Limit: 1 minute
+                    </li>
+                </ul>
+                <p class="m1">Execution:</p>
+                <ul>
+                    <li>
+                        Normal skipping (for every one jump, the skipping rope should
+                        rotate only once)</li>
+                    <li>
+                        Player will be begin with the timekeeper calling out “Set Go”</li>
+                    <li>
+                        Speed Events will begin with audio call out, “Judges Ready,
+                        Jumpers Ready, Set Go “</li>
+                    <li>
+                        Player can restart skipping if his/her rope got stopped in
+                        between the event and no extra time will be given for this
+                    </li>
+                </ul>
+                <p class="m1">Call Out:</p>
+                <ul>
+                    <li>
+                        “Judges Ready, Jumpers Ready, Set Go, 15, 30, 45,
+                        Stop"
+                    </li>
+                </ul>
+                <p class="m1">Goal:</p>
+                <ul>
+                    <li> To compete as many jumps as possible within 1 min</li>
+                </ul>
+                <p class="m1">Speed Sprint:</p>
+                <ul>
+                    <li>
+                        Time Limit: 30 seconds</li>
+                </ul>
+                <p class="m1">Execution:</p>
+                <ul>
+                    <li>
+                        Jogging Step Sprint ,Each time the rope rotate only one leg
+                        should touch the ground. </li>
+                    <li>
+                        Player will be begin with the timekeeper calling out “Set Go”</li>
+                    <li>
+                        Only right leg will be counted</li>
+                    <li>
+                        Speed Events will begin with audio call out, “Judges Ready,
+                        Jumpers Ready, Set Go “ </li>
+                    <li>
+                        Player can restart skipping if his/her rope got stopped in
+                        between the event and no extra time will be given for this
+                    </li>
+                </ul>
+                <p class="m1">Call Out:</p>
+                <ul>
+                    <li>
+                        “Judges Ready, Jumpers Ready, Set Go, 10, 20, Stop"
+                    </li>
+                </ul>
+                <p class="m1">Goal:</p>
+                <ul>
+
+                    <li> To compete as many jumps as possible within 30 seconds</li>
+                </ul>
+                <p class="m1">Note:</p>
+                <ul>
+                    <li>
+                        Broken Rope or Handle: If a rope or handle breaks, a repeat
+                        attempt is permitted after a suitable rest period of at least 10
+                        minutes. However, a team or skipper may only have a maximum of
+                        two attempts at the same event. The last attempt determines the
+                        score
+                    </li>
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>
+                Chess
+            </summary>
+            <div class="card">
+                <div class="imgcric">
+                    <img id="imgcricc" src="./src/chess.png">
+                </div>
+                <p class="prules">
+                <ul>
+                    <p class="m1">Rules and Regulations</p>
+                    <li>
+                        Players are paired using a computer program for each round
+                        of the tournament.</li>
+                    <li>
+                        Number of entries shall determine the format of the
+                        tournament.</li>
+                    <li>
+                        The Swiss scoring system will be used throughout the
+                        tournament.</li>
+                    <li>
+                        Tie breaks shall be decided by using the Buchholz system,
+                        Sonneborn-Berger system or the number of wins(Shall be
+                        decided and informed later.</li>
+                    <li>
+                        Players are expected to follow the rules of chess and behave
+                        in a fair and sportsmanlike manner.</li>
+                    <li>
+                        Cheating is strictly prohibited and may result in
+                        disqualification.</li>
+                    <li>
+                        Arbiter and the organizing team have the final say in the case
+                        of a dispute.</li>
+                    <li>
+                        All the players are requested to bring their own chess boards
+                        and pieces.</li>
+                    <li>
+                        All the players must have a chess clock app installed in their
+                        phones.
+                    </li>
+                </ul>
+                <p class="contacthead">
+                    Contact Persons:
+                </p>
+                <p class="contact">
+                    Laxman:8088357792<br>Likith:
+                </p>
+        </details>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <script>  const navbarToggle = document.querySelector(".navbar-toggle");
+            const navbarMenu = document.querySelector(".navbar-menu");
+    
+            navbarToggle.addEventListener("click", () => {
+                navbarToggle.classList.toggle("active");
+                navbarMenu.classList.toggle("active");
+            });</script>
+</body>
+
+</html>
