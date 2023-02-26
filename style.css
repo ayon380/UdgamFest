@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 249, 215);
 }
 
 @font-face {
@@ -54,16 +54,17 @@ body {
     width: 50%;
     /* background-color: rgba(66, 55, 55, 0.288); */
 }
+
 .container {
     color: #333;
-    
+    margin-top: 5rem;
     margin: 0 auto;
     text-align: center;
 }
 
 .container h1 {
     font-weight: normal;
-    margin-top :10rem;
+
     letter-spacing: .125rem;
     text-transform: uppercase;
 }
@@ -86,9 +87,56 @@ body {
     padding: 1rem;
 }
 
+.cardd .container #headline {
+    font-weight: bold;
+}
+
 .emoji span {
     font-size: 4rem;
     padding: 0 .5rem;
+}
+
+.cardd {
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: 0px 1px 2rem gold;
+    border: 2px solid gold;
+    transition: all .2s ease-in-out;
+    width: 35%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.cardd:hover {
+    transform: scale(1.1);
+    color: antiquewhite !important;
+}
+
+.cardd .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cardd .content {
+    text-align: center;
+}
+
+.cardd .content ul li {
+    list-style: none;
+}
+
+.cardd .heading {
+    text-align: center;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
 }
 
 @media all and (max-width: 768px) {
@@ -103,18 +151,38 @@ body {
     li span {
         font-size: calc(3.375rem * var(--smaller));
     }
+
+    .cardd {
+        margin: 2rem;
+        margin-top: 3rem;
+        box-shadow: 0px 1px 20px gold;
+        border: 2px solid gold;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        width: auto;
+        padding: 1rem;
+    }
+
+    .cardd .heading {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
-.carousel-inner{
+
+.carousel-inner {
     /* position:relative; */
 }
-.dp-container{
-     position:absolute;
-     width: 200px;
-     height: 200px;
-     border: 2px solid black;
-     padding: 1px;
-     z-index: 1000;
-     background-color: rgb(220,220,220);
-     left:400px;
-     bottom:20px;
-   }
+
+.dp-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 1px;
+    z-index: 1000;
+    background-color: rgb(220, 220, 220);
+    left: 400px;
+    bottom: 20px;
+}

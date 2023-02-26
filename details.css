@@ -43,6 +43,7 @@
    position: absolute;
    top: 20rem;
    left: 5rem;
+   height: auto;
    color: white;
    font-size: 15rem;
    /* left: 16px; */
@@ -173,20 +174,20 @@
    margin-top: 1rem;
  }
 
- @media screen and (max-width:600px) {
+ @media screen and (max-width:768px) {
    .card {
      margin-top: 1rem;
      padding: 0.5rem;
    }
 
    .main {
-     margin: 1rem;
+     margin: 1rem 1rem;
    }
 
    .top-left {
      font-size: 3rem;
      left: 1rem;
-     top: 8rem;
+     top: 10rem;
      /* left: 5rem; */
      ;
      /* left: 16px; */
