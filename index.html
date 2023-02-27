@@ -15,14 +15,16 @@
 <body>
   <nav>
     <div>
-      <div class="logo">
-        UDGAM'23
+      <div class="logoo">
+        <a href="/index.html">
+          UDGAM'23</a>
       </div>
     </div>
     <div>
       <ul id="nav">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/details.html">Sports</a></li>
+        <li><a href="/register.html">Registrations</a></li>
 
 
       </ul>
@@ -33,9 +35,8 @@
       <span></span>
     </div>
   </nav>
-  <div class="mm">asdasdasdad</div>
+  <div class="mm"></div>
   <style>
-    /* Important stuff here! Look at the bottom!!! (Line 133 to 136) */
     *,
     *::after,
     *::before {
@@ -60,7 +61,6 @@
       height: 4rem;
       z-index: 999;
       background: #000000;
-      /* box-shadow:1px 2px 10px gold; */
       /* box-shadow: var(--nav-shadow); */
     }
 
@@ -88,9 +88,11 @@
     }
 
     nav ul li {
+
       padding-top: var(--padding);
       padding-right: var(--padding);
-      padding-left: var(--padding);
+      /* padding-left: var(--padding); */
+
     }
 
     nav ul li a {
@@ -136,6 +138,10 @@
       transform-origin: left;
     }
 
+    nav ul li a:hover {
+      color: antiquewhite;
+    }
+
     nav .menu.active span {
       background: var(--main-clr);
     }
@@ -156,7 +162,7 @@
       transform: scale(0);
     }
 
-    @media (max-width: 910px) {
+    @media (max-width: 768px) {
       nav .menu {
         display: flex;
 
@@ -230,7 +236,7 @@
     National-Level Sports Fest, conducted by the Directorate of Sports. Over 16 sports under different categories will
     be held over a span of 3 days.</div>
   <div class="maincard">
-    <div class="cardd">
+    <div class="cardd ">
       <div class="container">
         <h1 id="headline">Countdown </h1>
         <div id="countdown">
@@ -248,51 +254,53 @@
         </div>
       </div>
     </div>
-    <div class="cardd">
+    <div class="cardd car">
       <div class="heading">Organising Commitee</div>
       <div class="wrapper-flex">
         <div class="containerr">
 
           <img src='profiles/Mani.jpg' alt='profile image' class="profile-img">
           <h1 class="name">GKV Manikantha</h1>
-          <p class="description">President<br>Student Council<br>7093400500</p>
+          <p class="description">President<br>Student Council<br>Student Council<br> 7093400500</p>
 
         </div>
         <div class="containerr">
 
           <img src='profiles/preetham.jpg' alt='profile image' class="profile-img">
           <h1 class="name">Vallabhaneni Preetam</h1>
-          <p class="description">Sports Secretary<br>7780402183</p>
+          <p class="description">Sports Secretary<br>Sports Coouncil<br>7780402183</p>
 
         </div>
         <div class="containerr">
 
           <img src='profiles/shivam.jpg' alt='profile image' class="profile-img">
           <h1 class="name">Shivam Agarwal</h1>
-          <p class="description">Treasurer<br>Student Council<br>9887030111</p>
-
-        </div>
-        <div class="containerr">
-
-          <img src='profiles/anurag.jpg' alt='profile image' class="profile-img">
-          <h1 class="name">Anurag Tsunduru</h1>
-          <p class="description">Events Head<br> 9063702568</p>
+          <p class="description">Treasurer<br>Student Council<br> 9887030111</p>
 
         </div>
         <div class="containerr">
 
           <img src='profiles/anisha.jpg' alt='profile image' class="profile-img">
           <h1 class="name">Anisha Yadlapalli</h1>
-          <p class="description">Vice-President<br> Student Council<br>9347645850</p>
+          <p class="description">Vice-President<br>Student Council<br> 9347645850</p>
 
         </div>
         <div class="containerr">
 
           <img src='profiles/keertahna.jpg' alt='profile image' class="profile-img">
           <h1 class="name">Sai Keerthana</h1>
-          <p class="description">Dy. Sports Secretary<br>8897946926</p>
+          <p class="description">Dy. Sports Secretary<br>Sports Council<br>8897946926</p>
 
         </div>
+        <div class="containerr">
+
+          <img src='profiles/anurag.jpg' alt='profile image' class="profile-img">
+          <h1 class="name">Anurag Tsunduru</h1>
+          <p class="description">Events Head<br>Student Council<br> 9063702568</p>
+
+        </div>
+
+
       </div>
     </div>
   </div>
