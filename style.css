@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: "crazy";
+    src: url(./fonts/NoizeSport-Regular.ttf );
+}
+
+@font-face {
     font-family: "Product Sans Bold";
     src: url(./fonts/Product\ Sans\ Bold.ttf);
 }
@@ -76,7 +81,7 @@ body {
 
 .container li {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
@@ -94,6 +99,7 @@ body {
 
 .cardd .container #headline {
     font-weight: bold;
+    font-size: 4rem;
 }
 
 .maincard {
@@ -106,10 +112,10 @@ body {
 }
 
 .cardd {
-    margin: auto;
+    margin: 5% 24%;
     margin-top: 3rem;
     box-shadow: 0px 1px 2rem gold;
-    border: 2px solid gold;
+    border: 2px solid silver;
     background-color: rgb(15, 13, 13);
     transition: all .2s ease-in-out;
     width: 55%;
@@ -126,10 +132,10 @@ body {
 }
 
 .cardd .heading {
-    font-size: 2rem;
+    font-size: 3rem !important;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem 0rem;
 }
 
 .cardd .content {
@@ -159,46 +165,30 @@ body {
     text-align: center;
 }
 
-@media all and (max-width: 768px) {
-    h1 {
-        font-size: calc(1.5rem * var(--smaller));
-    }
-
-    li {
-        font-size: calc(1.125rem * var(--smaller));
-    }
-
-    li span {
-        font-size: calc(3.375rem * var(--smaller));
-    }
-
-    .cardd {
-        margin: 2rem;
-        margin-top: 3rem;
-        box-shadow: 0px 1px 20px gold;
-        border: 2px solid gold;
-        border-radius: 1rem;
-        margin-bottom: 3rem;
-        width: auto;
-        padding: 1rem;
-    }
-
-    .cardd .heading {
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
+.cardd {
+    /* margin: 2rem;
+    margin-top: 3rem; */
+    box-shadow: 0px 1px 20px gold;
+    border: 2px solid gold;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    width: auto;
+    padding: 1rem;
 }
 
-.carousel-inner {
-    /* position:relative; */
+.cardd .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
 }
+
 
 .headingmain {
     text-align: center;
     font-size: 4rem;
     margin-top: 2rem;
+    font-family: crazy;
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -236,7 +226,7 @@ body {
 
 .containerr {
     overflow: hidden;
-    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    box-shadow: 1px 2px 15px gold;
     background-color: rgb(0, 0, 0) !important;
     text-align: center;
     border-radius: 1rem;
@@ -265,4 +255,65 @@ body {
 .description {
     margin: 1rem 2rem;
     font-size: 0.9rem;
+}
+
+.dgdg {
+    padding-top: 3rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+
+    .headingmain {
+        font-size: 3rem !important;
+        margin-top: 8rem;
+    }
+
+    .maincon {
+        font-size: 1rem !important;
+        /* margin: 5% 10%; */
+        margin: 5% 5% !important;
+    }
+
+    .cardd .container #headline {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .cardd {
+        margin: 2rem;
+        margin-top: 3rem;
+        box-shadow: 0px 1px 20px gold;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        margin: 5% 5%;
+        ;
+        width: auto;
+        padding: 1rem;
+    }
+
+    .dgdg {
+        padding-top: 8rem;
+        
+    }
+    .logo{
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .cardd .heading {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
