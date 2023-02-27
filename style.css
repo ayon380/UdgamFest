@@ -29,9 +29,11 @@
     font-family: "funky";
     src: url(./fonts/funky.otf);
 }
-.mm{
+
+.mm {
     height: 4rem;
 }
+
 * {
     font-family: Product Sans Regular;
     /* background-color: black; */
@@ -40,7 +42,7 @@
 body {
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgb(0, 0, 0)!important;
+    background-color: rgb(0, 0, 0) !important;
 }
 
 .logo {
@@ -94,7 +96,7 @@ body {
     font-weight: bold;
 }
 
-.maincard{
+.maincard {
     background-color: black;
 }
 
@@ -110,7 +112,9 @@ body {
     border: 2px solid gold;
     background-color: rgb(15, 13, 13);
     transition: all .2s ease-in-out;
-    width: 35%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -130,7 +134,7 @@ body {
 
 .cardd .content {
     text-align: center;
-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .cardd .content ul li {
@@ -138,6 +142,20 @@ color: rgb(255, 255, 255);
 }
 
 .cardd .heading {
+    text-align: center;
+}
+
+.ccard h1 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ccard p {
+    text-align: center;
+
+}
+
+.ccard .contactno {
     text-align: center;
 }
 
@@ -177,6 +195,20 @@ color: rgb(255, 255, 255);
     /* position:relative; */
 }
 
+.headingmain {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.maincon {
+    text-align: center;
+    font-size: 2rem;
+    margin: 5% 25%;
+}
+
 .dp-container {
     position: absolute;
     width: 200px;
@@ -187,4 +219,50 @@ color: rgb(255, 255, 255);
     background-color: rgb(220, 220, 220);
     left: 400px;
     bottom: 20px;
+}
+
+.profileimg {
+    object-fit: scale-down;
+    height: 100px;
+    padding-top: 2rem;
+    clip-path: circle();
+}
+
+.wrapper-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerr {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: rgb(0, 0, 0) !important;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    border: 2px solid gold;
+    width: 280px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+
+
+.profile-img {
+    width: 8rem;
+    margin-top: 1rem;
+    clip-path: circle(60px at center);
+    /* margin-top: 4.5rem;1 */
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
 }
