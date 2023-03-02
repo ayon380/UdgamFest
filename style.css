@@ -310,7 +310,9 @@ body {
         width: auto;
         padding: 1rem;
     }
-
+.buffer{
+    height: 2rem;
+}
     .dgdg {
         padding-top: 8rem;
         

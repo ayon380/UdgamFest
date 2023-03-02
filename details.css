@@ -91,8 +91,8 @@
    font-size: 18px;
  }
 
- .pimg{
-  height: 200px;
+ .pimg {
+   height: 200px;
  }
 
  .ccard a {
@@ -147,6 +147,16 @@
  .contacthead {
    font-size: 1.25rem;
    font-weight: bold;
+ }
+
+ #discord {
+   height: 2rem;
+   /* object-fit: contain; */
+ }
+
+ #rulebook {
+   height: 2rem;
+   /* object-fit: contain; */
  }
 
  @keyframes open {
