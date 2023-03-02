@@ -24,9 +24,9 @@
         </div>
         <div>
             <ul id="nav">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/details.html">Sports</a></li>
-                <li><a href="/register.html">Registrations</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/details">Sports</a></li>
+                <li><a href="/register">Registrations</a></li>
             </ul>
         </div>
         <div class="menu" id="menu">
@@ -209,8 +209,49 @@
     <div class="headd">
         Opening Soon..
     </div>
-
+    <div class="general">
+      <h1>General Instructions</h1>
+      <p>Registration is mandatory for Students to participate in Udgam 2023.</p>
+      <p>Only a bonafide, full time student, who is enrolled for a <strong>Bachelors or a Masters course</strong> in the University/College, will be eligible to participate. Students should be no older than <strong>25 years old</strong>.</p>
+      <p>All participants are mandatorily required to bring a <strong>hard copy</strong> of their <strong>college Identity card</strong> along with an <strong>Aadhaar card</strong> for the verification process.</p>
+      <p>Registration desks of Udgam 2023 will issue a temporary identity card to all its participants. Participants should bear this card at all times (3 days) during the events.</p>
+      <p>Complete registration will be done on <strong>10th March (8:30 AM - 12:30 PM)</strong>.</p>
+      <p>Fixtures will be finalized by the Organizing committee and intimated to the participating teams.</p>
+      <p>Organizing committee reserves the right to decide when the matches for any team will start to ensure the best of Udgam 2023.</p>
+      <p>Participating teams will be informed about their matches at least 30 minutes in advance and are expected to adhere to the mentioned timings. Exceptions will be only in the hands of the Organizing committee.</p>
+      <p>Illegal participation of any Player/Team in any event will be responsible for disqualification of the team of the concerned college from the event of the tournament and the college authority will be responsible for this act. The Grievance Committee reserves rights to take action against the people and university authorities, and even ban further participation.</p>
+      <p>Participants are required to present requested documents upon the demands of the Grievance Committee and Organizing Committee.</p>
+      <p>Any participating College/University can present an objection against the opponents on the grounds of illegal participation or lack of adherence to rules, during a match or 15 minutes before/after the match. Objections can be made either to the Grievance Committee or the Referees.</p>
+      <p>All events will commence at the scheduled time; Punctuality will be appreciated.</p>
+      <p>Payments can be done by using the QR code provided. Transaction ID should be verified</p>
+      <p>Only registered students will be permitted to enter the college premises.</p>
     </div>
+    <div class="discipline">
+      <h1>Discipline Rules</h1>
+      <p>Students should mandatorily carry their identity card while entering the event.</p>
+      <p>Smoking, drinking and consumption of objectionable materials are prohibited in the University. A stringent action will be taken against students if they are found in possession, consumption, and transportation.	</p>
+      <p>Any student found indulging in ragging or assaulting students in any form within the University shall be immediately debarred from the Tournament and necessary authorities will be informed.</p>
+      <p>A student who engages in abusive language will be subjected to disciplinary action</p>
+      <p>Any student found guilty of defacing or damaging University property like furniture, equipment, etc. will be debarred from the tournament and no refunds will be made. Necessary action will be taken accordingly.</p>
+      <p>All students of SRMAP must behave appropriately with students of other universities and colleges who are participating in Udgam 2023.</p>
+      <p>If any participant is found involved in any in- discipline or objectionable activities he/she will be debarred from the tournament depending on the situation. The Discipline Committee reserves rights to take actions in matters pertaining to disciplinary issues.</p>
+    </div>
+    <div class="terms">
+      <form class="" action="/register" method="post">
+        <input id="termsCB"type="checkbox" onChange="changeVisibility()" name="terms" value="">
+        <label><p>I Agree to the terms and conditions stated above</p></label> <br>
+        <button id="submitButton" type="submit" name="button" style="visibility:hidden">Register</button>
+      </form>
+    </div>
+    <script type="text/javascript">
+    function changeVisibility() {
+    if (document.getElementById("termsCB").checked) {
+      document.getElementById("submitButton").style.visibility = "visible";
+    } else {
+      document.getElementById("submitButton").style.visibility = "hidden";
+    }
+  }
+    </script>
     <script>
         // For toggling and finding number of children and other stuff is done here!
 

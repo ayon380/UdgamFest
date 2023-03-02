@@ -1,0 +1,241 @@
+ #pmain {
+   padding-top: 7rem;
+   padding-bottom: 2rem;
+   text-align: center;
+   font-size: 5rem;
+   position: absolute;
+ }
+
+ body {
+   background-color: black;
+ }
+
+ .container {
+   position: relative;
+   /* text-align: center; */
+   /* left:0px; */
+   width: 100%;
+   color: white;
+ }
+
+ summary {
+   color: wheat;
+ }
+
+ .imgcric {
+   position: relative;
+ }
+
+ .imgcric img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 1rem;
+   /* position: absolute; */
+   /* top: 0; */
+   /* left: 0; */
+   /* right: 0; */
+   /* bottom: 0; */
+   /* z-index: -1; */
+ }
+
+ .top-left {
+   position: absolute;
+   top: 10rem;
+   left: 5rem;
+   height: auto;
+   color: rgb(255, 218, 9);
+   font-size: 15rem;
+   /* left: 16px; */
+ }
+
+ .imggrad {
+   background-image:
+     linear-gradient(to right, black, rgba(255, 255, 255, 0)), url('src/clg.png');
+   background-size: contain;
+   width: 100%;
+   height: 40rem;
+   text-align: center;
+   color: #fff;
+   /* background-color: antiquewhite; */
+ }
+
+ .m11 {
+   height: 1rem;
+   z-index: 1000;
+   margin-bottom: 1rem;
+ }
+
+ /* ul {
+   padding-left: 1.5rem;
+ } */
+
+ .card {
+   margin: 1rem;
+   background-color: rgba(58, 58, 58, 0.247);
+   padding: 3rem;
+   color: rgba(0, 0, 0, 0);
+   box-shadow: 0px 1px 20px rgb(255, 237, 134);
+   border-radius: 1.6rem;
+ }
+
+ .ccard {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+ }
+
+ .ttitle {
+   color: grey;
+   font-size: 18px;
+ }
+
+ .pimg{
+  height: 200px;
+ }
+
+ .ccard a {
+   text-decoration: none;
+   font-size: 22px;
+   color: black;
+ }
+
+ button:hover,
+ a:hover {
+   opacity: 0.7;
+ }
+
+ .m1 {
+   font-weight: bold;
+   font-size: 1.25rem;
+   color: wheat;
+ }
+
+ li {
+   color: white;
+ }
+
+ .contact {
+   color: white
+ }
+
+ .contacthead {
+   color: wheat;
+ }
+
+ .football {
+   background-color: rgb(217, 252, 217);
+   box-shadow: 0px 1px 20px teal;
+ }
+
+ section {
+   padding-top: 4rem;
+   width: 50%;
+   margin: auto;
+ }
+
+ h1 {
+   font-size: 2rem;
+   font-weight: 500;
+ }
+
+ details[open] summary~* {
+   animation: open 0.5s ease-in-out;
+ }
+
+ .contacthead {
+   font-size: 1.25rem;
+   font-weight: bold;
+ }
+
+ @keyframes open {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ }
+
+ details summary::-webkit-details-marker {
+   display: none;
+ }
+
+ details summary {
+   width: 100%;
+   padding: 0.5rem 0;
+   border-bottom: 1px solid gold;
+   position: relative;
+   cursor: pointer;
+   font-size: 1.25rem;
+   font-weight: 300;
+   list-style: none;
+ }
+
+ details summary:after {
+   content: "+";
+   color: wheat;
+   position: absolute;
+   font-size: 1.75rem;
+   line-height: 0;
+   margin-top: 0.75rem;
+   right: 0;
+   font-weight: 200;
+   transform-origin: center;
+   transition: 200ms linear;
+ }
+
+ details[open] summary:after {
+   transform: rotate(45deg);
+   font-size: 2rem;
+ }
+
+ details summary {
+   outline: 0;
+ }
+
+ details p {
+   font-size: 0.95rem;
+   margin: 0 0 1rem;
+   padding-top: 1rem;
+ }
+
+ .main {
+   margin: 3rem 30rem;
+
+ }
+
+ .pmain {
+   margin-top: 1rem;
+ }
+
+ @media screen and (max-width:768px) {
+   .card {
+     margin-top: 1rem;
+     padding: 0.5rem;
+   }
+
+   .imggrad {
+     height: 20rem;
+   }
+
+   .main {
+     margin: 1rem 1rem;
+   }
+
+   .top-left {
+     font-size: 3rem;
+     left: 1rem;
+     top: 10rem;
+     /* left: 5rem; */
+     ;
+     /* left: 16px; */
+   }
+
+ }
+
+ /* .logo{
+  width: 90%;
+ } */
